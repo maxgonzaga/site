@@ -1,0 +1,116 @@
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    border-radius: 5px;
+    outline: none;
+    width: 400px;
+    max-width: 100%;
+    border: none;
+    resize: none;
+}
+
+/* Site-wide items */
+
+.main-container {
+    background-image: url('https://source.unsplash.com/npxXWgQ33ZQ');
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    text-align: center;
+    background-color: #fff9;
+    padding: 10px 120px;
+    /* max-width: 90%; */
+}
+
+
+.button {
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: #333;
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #f4f4f4;
+    transition: all 1s;
+    width: 160px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #666;
+    color: #fff;
+    box-shadow: 0px 0px 10px 2px #4449;
+}
+
+.contact {
+    padding: 20px;
+    margin: 0 auto;
+    border-top: 2px solid rgb(51, 50, 50);
+}
+
+
+/* Responsivess */
+
+@media(max-width: 800px) {
+    .content {
+        border-radius: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 100%;
+        padding: 20px;
+    }
+    input, text-area {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 500px)
+{
+    .content {
+        width: 100%;
+        min-height: 100vh;
+    }
+    h1 {
+        font-size: 40px;
+    }
+}
+
