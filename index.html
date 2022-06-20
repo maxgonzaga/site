@@ -39,5 +39,18 @@
             </form>
         </div>
     </div>
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+    </script>
+    <script>
+        (function () {
+            window.onload = function () {
+                new BlipChat()
+                .withAppKey('bWF4Z286ZDNmM2IzMzItMTdlZS00MjlhLTgzMDctOGNmYWZkMzVlNWJm')
+                .withButton({"color":"#2CC3D5","icon":""})
+                .withCustomCommonUrl('https://max-gonzaga-silva-melo-jtxfo.chat.blip.ai/')
+                .build();
+            }
+        })();
+    </script>
 </body>
 </html>

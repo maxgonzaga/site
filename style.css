@@ -30,7 +30,8 @@ label {
     margin-bottom: 10px;
 }
 
-input, textarea {
+input,
+textarea {
     padding: 10px;
     margin-bottom: 10px;
     font-size: 16px;
@@ -46,7 +47,7 @@ input, textarea {
 /* Site-wide items */
 
 .main-container {
-    background-image: url('https://source.unsplash.com/ymCt-vtHYqs');
+    background-image: url('./background.jpg');
     background-size: cover;
     min-height: 100vh;
     display: flex;
@@ -98,19 +99,20 @@ input, textarea {
         height: 100%;
         padding: 20px;
     }
-    input, text-area {
+
+    input,
+    text-area {
         max-width: 100%;
     }
 }
 
-@media(max-width: 500px)
-{
+@media(max-width: 500px) {
     .content {
         width: 100%;
         min-height: 100vh;
     }
+
     h1 {
         font-size: 40px;
     }
 }
-
